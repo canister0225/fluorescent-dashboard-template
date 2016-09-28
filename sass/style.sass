@@ -1,0 +1,309 @@
+//* * * * * * * * * 
+//*  @author Iris
+//*  
+//*  @introduce Exercise for CSS
+//*  @source https://dribbble.com/shots/2946436-NUVI-complete-product-overhaul
+//* * * * * * * * *
+
+$break-Mobile: 420px
+$break-Tablet: 800px
+$break-laptop: 1200px
+$break-laptopL: 1440px
+
+body
+  font-size: 14px
+
+\::-webkit-input-placeholder
+  color: #38A4D7
+\:-moz-placeholder
+  color: #38A4D7
+\::-moz-placeholder
+  color: #38A4D7
+\:-ms-input-placeholder
+  color: #38A4D7
+
+.container
+  width: 1600px
+  margin: 50px auto
+  @media screen and (max-width: $break-laptopL)
+    width: 1400px
+  @media screen and (max-width: $break-laptop)
+    width: 100%
+
+.container-style
+  background-color: #FFFFFF
+
+nav
+  width: 300px
+  background-color: #0e1829
+  position: absolute
+  padding: 30px 0px
+  border-top-left-radius: 10px
+  border-bottom-left-radius: 10px
+  z-index: 1000
+  @media screen and (max-width: $break-laptop)
+    background-color: rgba(14, 24, 41, 0.95)
+
+.sidebar-toggle
+  position: absolute
+  left: 300px
+  padding: 0px 40px
+  font-size: 2em
+  display: none
+  @media screen and (max-width: $break-laptop)
+    display: block
+  a
+    color: #FFFFFF
+
+
+
+.user-info
+  padding: 0px 20px
+  position: relative
+  .user-image
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #FFFFFF
+    position: absolute
+  .user-menu
+    line-height: 50px
+    padding-left: 70px
+    .user-name
+      color: #38A4D7
+      font-weight: 600
+      letter-spacing: 1px
+
+.menu
+  margin-top: 50px
+  ul
+    padding-left: 0
+    li
+      list-style: none
+      a
+        display: block
+        color: #FFFFFF
+        padding: 20px
+        font-weight: 800
+        &:hover
+          color: #fa3758
+        .icon-style
+          width: 30px
+          height: 28px
+          margin-left: 10px
+          margin-right: 20px
+          font-size: 1.5em
+          color: #838eab
+          display: inline-block
+        .hint
+          float: right
+          line-height: 2
+          padding: 0px 5px
+          box-shadow: 0px 0px 10px 2px rgba(7, 50, 82, 0.8)
+          background-color: rgba(7, 50, 82, 0.5)
+          border-radius: 50%
+    li.active
+      background-color: #071220
+      &:before
+        content: " "
+        width: 5px
+        height: 68px
+        display: block
+        background-color: #38A4D7
+        position: absolute
+        box-shadow: 3px 0px 35px 2px #38A4D7
+      a
+        .icon-style
+          color: #fa3758
+
+.main
+  margin-left: 300px
+  width: 1300px
+  background-color: #071220
+  border-top-right-radius: 10px
+  border-bottom-right-radius: 10px
+  padding: 30px 40px
+  @media screen and (max-width: $break-laptopL)
+    width: 1100px
+  @media screen and (max-width: $break-laptop)
+    width: 700px
+  @media screen and (max-width: $break-Tablet)
+    width: 100%
+    margin-left: 0px
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+
+.main-title
+  font-size: 1.7em
+  color: #38A4D7
+  font-weight: 800
+  @media screen and (max-width: $break-Tablet)
+    margin-top: 50px
+
+.add-btn
+  border: 2px solid #3fff80
+  color: #3fff80
+  background-color: rgba(63, 255, 128, 0.25)
+  padding: 10px 20px
+  font-weight: 600
+  font-size: 1.3em
+
+.text-right
+  text-align: right
+.text-center
+  text-align: center
+
+.tab-link
+  margin-top: 10px
+  border-bottom: 1px solid #38A4D7
+
+ul.tabs
+  padding-left: 0px
+  overflow: auto
+  li
+    list-style: none
+    float: left
+    a
+      color: #38A4D7
+      font-weight: 600
+      padding: 50px 20px
+      font-size: 1.1em
+      display: block
+      width: 150px
+      height: 50px
+  li.active
+    a
+      border-bottom: 5px solid #38A4D7
+      color: #FFFFFF
+
+input
+  border: 1px solid #38A4D7
+  background-color: rgba(56, 164, 215, 0.15)
+  color: #38A4D7
+  padding: 10px 35px
+  position: relative
+
+.search
+  padding-top: 35px
+  color: #38A4D7
+  position: relative
+  label
+    position: absolute
+    left: 15px
+    top: 48px
+
+.complex-info
+  margin-bottom: 50px
+  .subtitle
+    letter-spacing: 2px
+    padding: 30px 0px
+    color: #FFFFFF
+  .sum-count
+    color: #FFFFFF
+    font-size: 6em
+
+.row
+  &:after
+    display: block
+    content: ""
+    clear: left
+.col-half
+  width: 50%
+  float: left
+  @media screen and (max-width: $break-Tablet)
+    width: 100%
+.col-one-third
+  width: 33.33333%
+  float: left
+.col-two-third
+  width: 66.66666%
+  float: left
+.col-quarter
+  width: 25%
+  float: left
+.col-three-quarter
+  width: 75%
+  float: left
+
+.rate
+  text-align: center
+  .title
+    color: #FFFFFF
+    font-size: 1.5em
+    padding: 20px 0px
+  .up
+    color: #3fff80
+    text-shadow: 0px 0px 5px #3fff80
+  .rate-name
+    color: #838eab
+
+
+
+.box
+  border: 1px solid #38A4D7
+  margin-bottom: 20px
+  .box-header
+    border-bottom: 1px solid #38A4D7
+    color: #FFFFFF
+    background-color: rgba(56, 164, 215, 0.10)
+    position: relative
+    line-height: 3
+    font-size: 1.1em
+    .box-icon
+      text-align: center
+      color: #67a6ff
+      width: 70px
+      border-right: 1px solid #38A4D7
+      position: absolute
+    .box-title
+      letter-spacing: 2px
+      padding-left: 80px
+    .box-setting
+      color: #14c2f2
+      position: absolute
+      right: 20px
+      top: 0
+    .no-icon
+      padding-left: 30px
+  .box-body
+    padding: 20px
+
+.rate-percent
+  font-size: 1.8em
+  text-align: center
+  padding: 20px 0px
+.rate-percent-desc
+  font-size: 1.1em
+  text-align: center
+  margin-bottom: 50px
+
+
+.color-positive
+  color: #3fff80
+.color-negative
+  color: #fa3758
+.color-neural
+  color: #a346d9
+
+
+
+.f-table
+  width: 100%
+  tr
+    border-bottom: 1px solid #182536
+  th
+    padding: 20px
+    color: #67add1
+    font-weight: 600
+    text-align: left
+  td
+    padding: 20px
+    color: #838eab
+  tfoot
+    th,td
+      color: #FFFFFF
+
+footer
+  margin-top: 50px
+  color: #14c2f2
+  text-align: right
