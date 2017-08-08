@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+
+  <meta charset="UTF-8"></meta>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  <title>Fluorescent</title>
+  <link href="./css/normalize.css" rel="stylesheet" media="screen"></link>
+  <link href="./css/style.css" rel="stylesheet" media="screen"></link>
+  <link href="./css/font-awesome.min.css" rel="stylesheet" media="screen"></link>
+  <link href="./css/morris.css" rel="stylesheet" media="screen"></link>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="container-style">
+    <nav>
+      <div class="sidebar-toggle"><a class="sidebar-btn"> <i class="fa fa-align-justify"></i> </a></div>
+
+      <div class="user-info">
+        <div class="user-image"></div>
+        <div class="user-menu">
+          <span class="user-name">Iris Chuang <i class="fa fa-angle-down fa-lg"></i></span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="active">
+            <a href=""> <span class="icon-style"><i class="fa fa-television"></i></span> MONITORS  <span class="hint">9</span></a>
+          </li>
+          <li>
+            <a href=""> <span class="icon-style"><i class="fa fa-database"></i></span> CHANNELS  </a>
+          </li>
+          <li>
+            <a href=""> <span class="icon-style"><i class="fa fa-bullhorn"></i></span> PUBLISHING  <span class="hint">5</span></a>
+          </li>
+          <li>
+            <a href=""> <span class="icon-style"><i class="fa fa-film"></i></span> AUDIENCES  <span class="hint">3</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h2 class="main-title">ENDURO WORLD CUP</h2>
+      <div class="text-right">
+        <button href="" class="add-btn"><i class="fa fa-plus"></i>  New Monitor</button>
+      </div>
+
+      <div class="tab-link">
+        <ul class="tabs">
+          <li class="active"><a href="">OVERVIEW</a></li>
+          <li><a href="">COMPARE</a></li>
+          <li><a href="">FEED</a></li>
+          <li><a href="">STREAM</a></li>
+          <li><a href="">MAP</a></li>
+          <li><a href="">MAP</a></li>
+          <li>
+            <div class="search">
+              <label for="search"><i class="fa fa-search"></i></label>
+              <input type="text" id="search" class="search-input" value="" placeholder="Type To Find...">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="complex-info">
+        <p class="subtitle">MENTIONS IN THIS PERIOD</p>
+        <div class="row">
+          <div class="col-one-third">
+            <div class="sum-count">74,395</div>
+          </div>
+          <div class="col-two-third">
+            <div class="row">
+              <div class="col-quarter">
+                <div class="rate">
+                  <div class="title up"><i class="fa fa-arrow-up"></i> 37%</div>
+                  <p class="rate-name">FROM LAST PERIOD</p>
+                </div>
+              </div>
+              <div class="col-quarter">
+                <div class="rate">
+                  <div class="title">274</div>
+                  <p class="rate-name">AVG. MENTIONS / HOUR</p>
+                </div>
+              </div>
+              <div class="col-quarter">
+                <div class="rate">
+                  <div class="title">26,340</div>
+                  <p class="rate-name">UNIQUE AUTHORS</p>
+                </div>
+              </div>
+              <div class="col-quarter">
+                <div class="rate">
+                  <div class="title">35,723</div>
+                  <p class="rate-name">SHARED MENTIONS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-header">
+          <div class="box-icon"><i class="fa fa-bar-chart fa-lg"></i></div>
+          <div class="box-title">MENTIONS TIMELINE</div>
+          <div class="box-setting">INFO</div>
+        </div>
+        <div class="box-body">
+          <div id="myfirstchart" style="height: 250px;"></div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="box-header">
+          <div class="box-icon"><i class="fa fa-bar-chart fa-lg"></i></div>
+          <div class="box-title">MENTIONS TIMELINE</div>
+          <div class="box-setting">INFO</div>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="col-one-third">
+              <div class="row">
+                <div class="col-one-third">
+                  <div class="rate-percent color-positive">72%</div>
+                  <div class="rate-percent-desc color-positive">POSITIVE</div>
+                </div>
+                <div class="col-one-third">
+                  <div class="rate-percent color-negative">17%</div>
+                  <div class="rate-percent-desc color-negative">NEGATIVE</div>
+                </div>
+                <div class="col-one-third">
+                  <div class="rate-percent color-neural">11%</div>
+                  <div class="rate-percent-desc color-neural">NEUTRAL</div>
+                </div>
+              </div>
+
+              <div id="mysecondchart" style="height: 250px;"></div>
+            </div>
+            <div class="col-two-third">
+              <div id="mythirdchart" style="height: 400px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="box-header">
+          <div class="box-icon"><i class="fa fa-table fa-lg"></i></div>
+          <div class="box-title">TABLE</div>
+          <div class="box-setting"><i class="fa fa-angle-down fa-lg"></i></div>
+        </div>
+        <div class="box-body">
+          <table class="f-table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Job Title</th>
+                <th><i class="fa fa-twitter"></i> Twitter</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pink</td>
+                <td>Bike</td>
+                <td>Product Manager</td>
+                <td>@pinkbike2136</td>
+                <td>59,000</td>
+              </tr>
+              <tr>
+                <td>Kody</td>
+                <td>Kelly</td>
+                <td>Sales</td>
+                <td>@kellykelly1234</td>
+                <td>41,000</td>
+              </tr>
+              <tr>
+                <td>Richie</td>
+                <td>Rude</td>
+                <td>Sales</td>
+                <td>@davidguttid</td>
+                <td>38,000</td>
+              </tr>
+            </tboby>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total</th>
+                <td>138,000</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title no-icon">MOST REACHED</div>
+          <div class="box-setting"><i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header">
+          <div class="box-title no-icon">MOST SPREAD</div>
+          <div class="box-setting"><i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+
+
+      <footer>
+        Created by Iris Chuang. Design form NUVI.
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+  <script src="./javascripts/vender/jquery-1.11.1.js" type="text/javascript"></script>
+  <script src="./javascripts/vender/raphael.min.js" type="text/javascript"></script>
+  <script src="./javascripts/vender/morris.js" type="text/javascript"></script>
+  
+  <script src="./javascripts/style.js" type="text/javascript"></script>
+  <script>
+    new Morris.Line({
+      // ID of the element in which to draw the chart.
+      element: 'myfirstchart',
+      // Chart data records -- each entry in this array corresponds to a point on
+      // the chart.
+      data: [
+        { year: '2008', value: 20 },
+        { year: '2009', value: 15 },
+        { year: '2010', value: 5 },
+        { year: '2011', value: 5 },
+        { year: '2012', value: 30 },
+        { year: '2013', value: 20 },
+        { year: '2014', value: 10 },
+        { year: '2015', value: 3 }
+      ],
+      // The name of the data record attribute that contains x-values.
+      xkey: 'year',
+      // A list of names of data record attributes that contain y-values.
+      ykeys: ['value'],
+      // Labels for the ykeys -- will be displayed when you hover over the
+      // chart.
+      labels: ['Value'],
+      lineColors: ['#14c2f2', '#14c2f2'],
+      pointStrokeColors: '#14c2f2'
+    });
+
+
+    Morris.Donut({
+      element: 'mysecondchart',
+      data: [
+        {label: "Download Sales", value: 12},
+        {label: "In-Store Sales", value: 30},
+        {label: "Mail-Order Sales", value: 20}
+      ],
+      colors: ['#fa3758', '#3fff80', '#a346d9'],
+      backgroundColor: '#071220',
+      labelColor: '#14c2f2'
+    });
+
+
+    Morris.Area({
+      element: 'mythirdchart',
+      data: [
+        { y: '2006', a: 100, b: 90 },
+        { y: '2007', a: 75,  b: 65 },
+        { y: '2008', a: 50,  b: 40 },
+        { y: '2009', a: 75,  b: 65 },
+        { y: '2010', a: 50,  b: 40 },
+        { y: '2011', a: 75,  b: 65 },
+        { y: '2012', a: 100, b: 90 }
+      ],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Series A', 'Series B'],
+      lineColors: ['#fa3758', '#3fff80'],
+      pointStrokeColors: ['#fa3758', '#3fff80'],
+      fillOpacity: 0.5
+    });
+  </script>
+
+
+
+</html>

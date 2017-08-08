@@ -1,0 +1,395 @@
+body {
+  font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+  color: #38A4D7;
+}
+
+:-moz-placeholder {
+  color: #38A4D7;
+}
+
+::-moz-placeholder {
+  color: #38A4D7;
+}
+
+:-ms-input-placeholder {
+  color: #38A4D7;
+}
+
+.container {
+  width: 1600px;
+  margin: 50px auto;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container-style {
+  background-color: #FFFFFF;
+}
+
+nav {
+  width: 300px;
+  background-color: #0e1829;
+  position: absolute;
+  padding: 30px 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 1000;
+}
+@media screen and (max-width: 1200px) {
+  nav {
+    background-color: rgba(14, 24, 41, 0.95);
+  }
+}
+
+.sidebar-toggle {
+  position: absolute;
+  left: 300px;
+  padding: 0px 40px;
+  font-size: 2em;
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-toggle {
+    display: block;
+  }
+}
+.sidebar-toggle a {
+  color: #FFFFFF;
+}
+
+.user-info {
+  padding: 0px 20px;
+  position: relative;
+}
+.user-info .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+.user-info .user-menu {
+  line-height: 50px;
+  padding-left: 70px;
+}
+.user-info .user-menu .user-name {
+  color: #38A4D7;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu {
+  margin-top: 50px;
+}
+.menu ul {
+  padding-left: 0;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 20px;
+  font-weight: 800;
+}
+.menu ul li a:hover {
+  color: #fa3758;
+}
+.menu ul li a .icon-style {
+  width: 30px;
+  height: 28px;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 1.5em;
+  color: #838eab;
+  display: inline-block;
+}
+.menu ul li a .hint {
+  float: right;
+  line-height: 2;
+  padding: 0px 5px;
+  box-shadow: 0px 0px 10px 2px rgba(7, 50, 82, 0.8);
+  background-color: rgba(7, 50, 82, 0.5);
+  border-radius: 50%;
+}
+.menu ul li.active {
+  background-color: #071220;
+}
+.menu ul li.active:before {
+  content: " ";
+  width: 5px;
+  height: 68px;
+  display: block;
+  background-color: #38A4D7;
+  position: absolute;
+  box-shadow: 3px 0px 35px 2px #38A4D7;
+}
+.menu ul li.active a .icon-style {
+  color: #fa3758;
+}
+
+.main {
+  margin-left: 300px;
+  width: 1300px;
+  background-color: #071220;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px 40px;
+}
+@media screen and (max-width: 1440px) {
+  .main {
+    width: 1100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+    margin-left: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.main-title {
+  font-size: 1.7em;
+  color: #38A4D7;
+  font-weight: 800;
+}
+@media screen and (max-width: 800px) {
+  .main-title {
+    margin-top: 50px;
+  }
+}
+
+.add-btn {
+  border: 2px solid #3fff80;
+  color: #3fff80;
+  background-color: rgba(63, 255, 128, 0.25);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tab-link {
+  margin-top: 10px;
+  border-bottom: 1px solid #38A4D7;
+}
+
+ul.tabs {
+  padding-left: 0px;
+  overflow: auto;
+}
+ul.tabs li {
+  list-style: none;
+  float: left;
+}
+ul.tabs li a {
+  color: #38A4D7;
+  font-weight: 600;
+  padding: 50px 20px;
+  font-size: 1.1em;
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+ul.tabs li.active a {
+  border-bottom: 5px solid #38A4D7;
+  color: #FFFFFF;
+}
+
+input {
+  border: 1px solid #38A4D7;
+  background-color: rgba(56, 164, 215, 0.15);
+  color: #38A4D7;
+  padding: 10px 35px;
+  position: relative;
+}
+
+.search {
+  padding-top: 35px;
+  color: #38A4D7;
+  position: relative;
+}
+.search label {
+  position: absolute;
+  left: 15px;
+  top: 48px;
+}
+
+.complex-info {
+  margin-bottom: 50px;
+}
+.complex-info .subtitle {
+  letter-spacing: 2px;
+  padding: 30px 0px;
+  color: #FFFFFF;
+}
+.complex-info .sum-count {
+  color: #FFFFFF;
+  font-size: 6em;
+}
+
+.row:after {
+  display: block;
+  content: "";
+  clear: left;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 800px) {
+  .col-half {
+    width: 100%;
+  }
+}
+
+.col-one-third {
+  width: 33.33333%;
+  float: left;
+}
+
+.col-two-third {
+  width: 66.66666%;
+  float: left;
+}
+
+.col-quarter {
+  width: 25%;
+  float: left;
+}
+
+.col-three-quarter {
+  width: 75%;
+  float: left;
+}
+
+.rate {
+  text-align: center;
+}
+.rate .title {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 20px 0px;
+}
+.rate .up {
+  color: #3fff80;
+  text-shadow: 0px 0px 5px #3fff80;
+}
+.rate .rate-name {
+  color: #838eab;
+}
+
+.box {
+  border: 1px solid #38A4D7;
+  margin-bottom: 20px;
+}
+.box .box-header {
+  border-bottom: 1px solid #38A4D7;
+  color: #FFFFFF;
+  background-color: rgba(56, 164, 215, 0.1);
+  position: relative;
+  line-height: 3;
+  font-size: 1.1em;
+}
+.box .box-header .box-icon {
+  text-align: center;
+  color: #67a6ff;
+  width: 70px;
+  border-right: 1px solid #38A4D7;
+  position: absolute;
+}
+.box .box-header .box-title {
+  letter-spacing: 2px;
+  padding-left: 80px;
+}
+.box .box-header .box-setting {
+  color: #14c2f2;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.box .box-header .no-icon {
+  padding-left: 30px;
+}
+.box .box-body {
+  padding: 20px;
+}
+
+.rate-percent {
+  font-size: 1.8em;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.rate-percent-desc {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.color-positive {
+  color: #3fff80;
+}
+
+.color-negative {
+  color: #fa3758;
+}
+
+.color-neural {
+  color: #a346d9;
+}
+
+.f-table {
+  width: 100%;
+}
+.f-table tr {
+  border-bottom: 1px solid #182536;
+}
+.f-table th {
+  padding: 20px;
+  color: #67add1;
+  font-weight: 600;
+  text-align: left;
+}
+.f-table td {
+  padding: 20px;
+  color: #838eab;
+}
+.f-table tfoot th, .f-table tfoot td {
+  color: #FFFFFF;
+}
+
+footer {
+  margin-top: 50px;
+  color: #14c2f2;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
